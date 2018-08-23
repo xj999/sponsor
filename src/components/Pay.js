@@ -1,6 +1,5 @@
 import React from "react";
-import { Skm_weixin } from "../assets/skm_weixin.jpg"; 
-import { Skm_alipay } from "../assets/skm_alipay.jpg"; 
+ 
 import { styles } from "./Pay.css";
 class Pay extends React.Component {
     constructor(props) {
@@ -10,8 +9,9 @@ class Pay extends React.Component {
   render() {
     return (
       <div>
-      <img className={styles.alipay} height="454" width="331" src={Skm_weixin}/>
-      <img height="454" width="331" src={Skm_alipay}/>
+        <p/>
+      <img  height="454" width="331" src={require("../assets/skm_weixin.jpg")} alt="qrcode_weixin"/>
+      <img height="454" width="331" src={require("../assets/skm_alipay.jpg" )} alt="qrcode_alipay"/>
       </div>
     );
   }
